@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 500px;
+        margin: 10px auto;
+      }
+      #middle {
+        /* overflow: hidden; */
+        display: flex;
+      }
+      #left {
+        float: left;
+        width: 150px;
+        background: red;
+      }
+      #right {
+        float: right;
+        background: blue;
+      }
+      #top {
+        background: green;
+      }
+      #bottom {
+        background: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top">Lorem ipsum dolor sit amet, ...</div>
+    <div id="middle">
+      <div id="left">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+      <div id="right">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
+      </div>
+    </div>
+    <div id="bottom">Lorem ipsum dolor sit amet, ...</div>
+  </body>
+</html>

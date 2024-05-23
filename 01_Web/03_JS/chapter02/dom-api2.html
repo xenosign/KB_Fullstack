@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+
+      .skyblue {
+        background-color: skyblue;
+      }
+
+      .orange {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box orange">Box!!</div>
+    <script>
+      const boxEl = document.querySelector('.box');
+
+      boxEl.addEventListener('click', function () {
+        if (boxEl.classList.contains('orange')) {
+          boxEl.classList.remove('orange');
+          boxEl.classList.add('skyblue');
+        } else {
+          boxEl.classList.remove('skyblue');
+          boxEl.classList.add('orange');
+        }
+      });
+    </script>
+  </body>
+</html>
