@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-areas:
+          'header'
+          'nav'
+          'main'
+          'aside'
+          'footer';
+        grid-gap: 10px;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: #f8b400;
+        text-align: center;
+      }
+
+      .nav {
+        grid-area: nav;
+        background-color: #f85f36;
+        text-align: center;
+      }
+
+      .main {
+        grid-area: main;
+        background-color: #4caf50;
+        text-align: center;
+      }
+
+      .aside {
+        grid-area: aside;
+        background-color: #2196f3;
+        text-align: center;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: #ff5722;
+        text-align: center;
+      }
+
+      /* 데스크탑 스타일 */
+      @media (min-width: 768px) {
+        .container {
+          grid-template-areas:
+            'header header header'
+            'nav main aside'
+            'footer footer footer';
+          grid-template-columns: 1fr 2fr 1fr;
+        }
+      }
+
+      /* 태블릿 스타일 */
+      @media (min-width: 480px) and (max-width: 767px) {
+        .container {
+          grid-template-areas:
+            'header'
+            'nav'
+            'main'
+            'aside'
+            'footer';
+          grid-template-columns: 1fr;
+        }
+
+        .nav {
+          order: 1;
+        }
+
+        .main {
+          order: 2;
+        }
+
+        .aside {
+          order: 3;
+        }
+
+        .footer {
+          order: 4;
+        }
+      }
+
+      /* 모바일 스타일 */
+      @media (max-width: 479px) {
+        .container {
+          grid-template-areas:
+            'header'
+            'main'
+            'nav'
+            'aside'
+            'footer';
+          grid-template-columns: 1fr;
+        }
+
+        .nav {
+          order: 2;
+        }
+
+        .main {
+          order: 1;
+        }
+
+        .aside {
+          order: 3;
+        }
+
+        .footer {
+          order: 4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">헤더</header>
+      <nav class="nav">네비게이션</nav>
+      <main class="main">메인 콘텐츠</main>
+      <aside class="aside">사이드바</aside>
+      <footer class="footer">푸터</footer>
+    </div>
+  </body>
+</html>
