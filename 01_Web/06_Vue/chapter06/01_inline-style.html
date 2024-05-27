@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1 style="background-color: skyblue">일반 스타일</h1>
+      <h1 v-bind:style="{ backgroundColor : 'orange', color: 'white' }">
+        Vue 서타일
+      </h1>
+      <h1 :style="variableStyle">Vue 변수 스타일</h1>
+    </div>
+  </body>
+  <script>
+    const vueApp = Vue.createApp({
+      name: 'App',
+      data() {
+        return {
+          variableStyle: { backgroundColor: 'dodgerblue' },
+        };
+      },
+    }).mount('#app');
+  </script>
+</html>
