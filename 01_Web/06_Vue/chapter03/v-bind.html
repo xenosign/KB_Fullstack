@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <img :src="imgSrc" alt="장동민비버" />
+      <button v-on:click="changeImgSrc">이미지 변경</button>
+    </div>
+  </body>
+  <script>
+    const vueApp = Vue.createApp({
+      name: 'App',
+      data() {
+        return {
+          imgSrc:
+            'https://photo.coolenjoy.co.kr/data/editor/2008/20200813130955_aiqgbsrk.gif',
+        };
+      },
+      methods: {
+        changeImgSrc() {
+          this.imgSrc =
+            'https://i.namu.wiki/i/u63TLmt3drqji6F9S7_jkjO4ndxuW7k8i75Hr7ZVkuv7V_U6mVK6J_oudGiz-sPajTRnYS1sPOakwLhJ-BbPGA.webp';
+        },
+      },
+    }).mount('#app');
+  </script>
+</html>
