@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Bootstrap-Q">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/01_Web/05_Bootstrap/Bootstrap-Q.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
