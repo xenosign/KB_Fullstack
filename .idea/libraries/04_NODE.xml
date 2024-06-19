@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="04_NODE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/01_Web/04_NODE/Q03.zip!/" />
+      <root url="jar://$PROJECT_DIR$/01_Web/04_NODE/Q02.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
