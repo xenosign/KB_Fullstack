@@ -58,6 +58,7 @@ ORDER BY height DESC, name ASC;
 SELECT addr FROM usertbl
 ORDER BY addr ASC;
 SELECT DISTINCT addr FROM usertbl;
+SELECT COUNT(*) FROM ANIMAL_INS;
 
 
 
